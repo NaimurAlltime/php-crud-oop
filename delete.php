@@ -1,5 +1,5 @@
 <?php
-include 'dbConnect.php';
+include 'db_connect.php';
 $db = new dbConnect();
 
 $id = $_GET['id'];

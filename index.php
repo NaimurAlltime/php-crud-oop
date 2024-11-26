@@ -1,5 +1,5 @@
 <?php
-require 'dbConnect.php';
+include 'db_connect.php';
 $db = new dbConnect();
 $result = mysqli_query($db->dbh, "SELECT * FROM user1");
 ?>
@@ -39,7 +39,7 @@ $result = mysqli_query($db->dbh, "SELECT * FROM user1");
                 <td><?= $row['addrss'] ?></td>
                 <td>
                     <a href="edit.php?id=<?= $row['id'] ?>">Edit</a>
-                    <a href="delete.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure?')">Delete</a>
+                    <a href="delete.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure delete here?')">Delete</a>
                 </td>
             </tr>
             <?php endwhile; ?>

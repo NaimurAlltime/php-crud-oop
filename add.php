@@ -1,5 +1,5 @@
 <?php
-include 'dbConnect.php';
+include 'db_connect.php';
 $db = new dbConnect();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

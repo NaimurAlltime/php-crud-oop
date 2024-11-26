@@ -2,14 +2,14 @@
 define('DB_SERVER','localhost');
 define('DB_USER','root');
 define('DB_PASS' ,'');
-define('DB_NAME', 'demo');
+define('DB_NAME', 'crud_oop');
 
 class dbConnect
 {
     //constructor
 function __construct()
 {
-$conn = mysqli_connect(DB_SERVER,DB_USER,DB_PASS,DB_NAME);
+$conn = mysqli_connect(DB_SERVER, DB_USER ,DB_PASS, DB_NAME);
 $this->dbh=$conn;
 // Check connection
 if (mysqli_connect_errno())
